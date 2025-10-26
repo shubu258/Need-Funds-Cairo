@@ -1,4 +1,4 @@
-# dex — StarkNet Crowdfunding Registry
+# Dapp — StarkNet Crowdfunding Registry
 
 A small Cairo (StarkNet) contract project that implements a crowdfunding/registry pattern: create campaigns, contribute funds, check campaign goal/progress, and allow campaign creators to withdraw raised funds. Built with Cairo 1.0, ScarB, and Starknet Foundry (snforge).
 
