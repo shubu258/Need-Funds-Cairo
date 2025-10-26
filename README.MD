@@ -88,16 +88,3 @@ Note: token transfer code depends on the token contract interface. The project c
 - LSP / VS Code "Request textDocument/semanticTokens/full failed. Source: Cairo 1.0": often caused by language-server crashes when parsing invalid/incomplete code. Fixing syntax/storage issues in `src/lib.cairo` usually resolves this.
 - If `scarb build` shows ambiguous method calls (e.g. ambiguous `.at()` or missing `.push()`): check that the storage member is declared with the correct node type (`array<T>` for `.push`/`.len`, `map<K,V>` for `.at(...).read()` semantics) and import the right storage traits if necessary.
 
-## How I can help next
-
-If you'd like, I can:
-
-- Make the contract storage consistent for you (map-based or array-based), or
-- Add a small token-transfer snippet (for a specific token interface you provide), or
-- Run `scarb build` here and fix the specific compile errors (I'll iterate until green).
-
-Tell me which action you'd like me to take next.
-
----
-
-Short tagline: "dex — a Cairo/StarkNet crowdfunding registry (create, fund, view progress, withdraw)."
